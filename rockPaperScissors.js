@@ -35,7 +35,7 @@ function makeChoice(user, computer) {
   ) {
     return 'win';
   } else if (user === computer) {
-    return 'even';
+    return 'Draw';
   } else {
     return 'lose';
   }
