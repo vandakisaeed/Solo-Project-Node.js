@@ -3,6 +3,8 @@ const args = process.argv.slice(2);
 
 const userInput = args[0];
 const user = userInput.toLowerCase();
+
+
 if (user !== 'rock' && user !=='paper'&& user !=='scissor') {
   console.error('Please provide exactly Rock , Paper , Scissor');
   return;

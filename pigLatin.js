@@ -1,14 +1,11 @@
 
 // pigLatin.js
 
-// Nimmt alle Befehlszeilenargumente ab dem dritten Element (index 2)
-// z.B. node pigLatin.js "Hello world" → args = ['Hello', 'world']
 const args = process.argv.slice(2);
 
 // Wenn keine Eingabe vorhanden ist, zeige einen Fehler und beende das Programm
 if (args.length === 0) {
-  console.error('❌ Bitte gib einen Satz zum Übersetzen ein.');
-  process.exit(1);
+  console.error('Bitte gib einen Satz zum Übersetzen ein.');
 }
 
 // Verbindet die Wörter wieder zu einem String mit Leerzeichen (falls mehr als ein Wort)
